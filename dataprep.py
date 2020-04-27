@@ -108,8 +108,6 @@ print(scryData.shape)
 #######
 
 myData.to_csv('new.csv', index=False)
-scryData.to_csv('old.csv', index=False)
-
 
 #######
 # legacy
