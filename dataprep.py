@@ -85,8 +85,11 @@ myData['rarity'] = scryData['rarity']
 #myData['flavor_text'] = scryData['flavor_text']
 #myData['artist'] = scryData['artist']
 myData['edhrec_rank'] = scryData['edhrec_rank']
+myData['edhrec_rank'] = scryData['edhrec_rank'].fillna(20000)
 myData['power'] = scryData['power']
+myData['power'] = scryData['power'].fillna(-1)
 myData['toughness'] = scryData['toughness']
+myData['toughness'] = scryData['toughness'].fillna(-1)
 
 
 #######
@@ -96,6 +99,7 @@ myData['toughness'] = scryData['toughness']
 print(scryData.info(verbose = True))
 print(' ')
 print(myData.info(verbose = True))
+print(myData.isnull().sum())
 print(' ')
 print(scryData.shape)
 
