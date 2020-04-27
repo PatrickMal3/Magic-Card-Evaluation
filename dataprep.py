@@ -33,7 +33,6 @@ scryData = scryData[~scryData['name'].isin(filter_names_lst)]
 filter_set_lst = ['unh', 'ust', 'und', 'ugl']
 scryData = scryData[~scryData['set'].isin(filter_set_lst)]
 
-
 #######
 # define new dataframe
 #######
