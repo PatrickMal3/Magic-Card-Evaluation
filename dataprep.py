@@ -89,6 +89,7 @@ myData['power'] = scryData['power']
 myData['power'] = scryData['power'].fillna(-1)
 myData['toughness'] = scryData['toughness']
 myData['toughness'] = scryData['toughness'].fillna(-1)
+myData['last_set'] = scryData['set_name']
 
 
 #######

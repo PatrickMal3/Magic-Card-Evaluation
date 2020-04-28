@@ -1,0 +1,383 @@
+1588073390342	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileKIoIwi"
+1588073390729	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588073391409	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588073391409	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588073391410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588073391410	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588073393172	Marionette	INFO	Listening on port 40369
+1588073393304	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588073415879	Marionette	INFO	Stopped listening on port 40369
+1588073461215	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiles7ngAI"
+1588073461624	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588073462280	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588073462280	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588073462280	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588073462281	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588073463441	Marionette	INFO	Listening on port 41993
+1588073463532	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588073475998	Marionette	INFO	Stopped listening on port 41993
+1588074132838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileEHKQha"
+1588074133223	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074133890	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074133890	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074133890	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074133890	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074135588	Marionette	INFO	Listening on port 41169
+1588074135645	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588074157532	Marionette	INFO	Stopped listening on port 41169
+1588074178629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2a6s7O"
+1588074179002	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074180027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074180027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074180027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074180027	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074181209	Marionette	INFO	Listening on port 44043
+1588074181236	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588074197852	Marionette	INFO	Stopped listening on port 44043
+1588074217573	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileMdjxk9"
+1588074217987	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074219190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074219190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074219190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074219190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074220406	Marionette	INFO	Listening on port 38005
+1588074220760	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588074241328	Marionette	INFO	Stopped listening on port 38005
+1588074289021	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefL63hj"
+1588074289418	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074290073	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074290074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074290074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074290074	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074291743	Marionette	INFO	Listening on port 39931
+1588074291830	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588074344817	Marionette	INFO	Stopped listening on port 39931
+1588074376470	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilepNiBRM"
+1588074376863	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074377972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074377972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074377972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074377972	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074379241	Marionette	INFO	Listening on port 34233
+1588074379276	Marionette	WARN	TLS certificate errors will be ignored for this session
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588074401602	Marionette	INFO	Stopped listening on port 34233
+1588074689894	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilez3ktWU"
+1588074690277	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074690942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074690942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074690942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074690942	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074692251	Marionette	INFO	Listening on port 44647
+1588074692302	Marionette	WARN	TLS certificate errors will be ignored for this session
+1588074724904	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezspfWf"
+1588074725306	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074725990	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074725991	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074725991	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074725991	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074727167	Marionette	INFO	Listening on port 39229
+1588074727209	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1666435175, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1666435175, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1666435175, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1666435175 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1666435175 line 1 > eval, line 1: unreachable code after return statement
+1588074854701	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexHIORS"
+1588074855114	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074855845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074855845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074855845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074855845	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074857028	Marionette	INFO	Listening on port 41753
+1588074857112	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=976804987, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=976804987, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=976804987 line 1 > eval, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588074866166	Marionette	INFO	Stopped listening on port 39229
+1588074867831	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile66O577"
+1588074867835	Marionette	INFO	Stopped listening on port 41753
+1588074868239	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074869376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074869376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074869376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074869376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074870578	Marionette	INFO	Listening on port 46571
+1588074870945	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=806006935, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=806006935, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=806006935 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=806006935 line 1 > eval, line 1: unreachable code after return statement
+1588074884351	Marionette	INFO	Stopped listening on port 46571
+1588074915090	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileioARNR"
+1588074915498	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588074916190	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588074916191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588074916191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588074916191	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588074917394	Marionette	INFO	Listening on port 45061
+1588074917501	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=331773495, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=331773495, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=331773495, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=331773495 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=331773495 line 1 > eval, line 1: unreachable code after return statement
+1588074936260	Marionette	INFO	Stopped listening on port 45061
+1588075012232	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileHe2n1e"
+1588075012631	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075013760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075013760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075013760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075013760	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075015343	Marionette	INFO	Listening on port 34337
+1588075015439	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=84293853, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=84293853, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=84293853 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=84293853 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588075335882	Marionette	INFO	Stopped listening on port 44647
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588075426724	Marionette	INFO	Stopped listening on port 34337
+1588075429617	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilennwIQb"
+1588075430001	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075430658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075430658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075430658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075430658	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075431869	Marionette	INFO	Listening on port 37299
+1588075431926	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1157411168, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1157411168, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1157411168 line 1 > eval, line 1: unreachable code after return statement
+1588075443664	Marionette	INFO	Stopped listening on port 37299
+1588075539864	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileW3Nt1k"
+1588075540261	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075540921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075540921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075540921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075540921	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075542106	Marionette	INFO	Listening on port 39347
+1588075542227	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2028471117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2028471117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2028471117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2028471117 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=2028471117 line 1 > eval, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1588075551677	Marionette	INFO	Stopped listening on port 39347
+1588075555409	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDl4ffi"
+1588075555809	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075556510	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075556510	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075556510	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075556511	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075558359	Marionette	INFO	Listening on port 33379
+1588075558425	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1085631015, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1085631015, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1085631015, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1085631015 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1085631015 line 1 > eval, line 1: unreachable code after return statement
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+JavaScript error: resource://devtools/client/shared/source-map/index.js, line 490: Error: Error parsing mappings (code 1): the mappings contained a negative line, column, source index, or name index
+1588075958123	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileVBOTcY"
+1588075958530	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075959185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075959185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075959185	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075959186	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075960362	Marionette	INFO	Listening on port 42597
+1588075960436	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1875802583, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1875802583, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1875802583, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1875802583 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1875802583 line 1 > eval, line 1: unreachable code after return statement
+1588075970348	Marionette	INFO	Stopped listening on port 42597
+1588075991164	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilehepg3C"
+1588075991551	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588075992253	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588075992253	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588075992253	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588075992253	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588075993518	Marionette	INFO	Listening on port 37103
+1588075993569	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=716931117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=716931117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=716931117, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=716931117 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=716931117 line 1 > eval, line 1: unreachable code after return statement
+1588076001455	Marionette	INFO	Stopped listening on port 37103
+1588076005805	Marionette	INFO	Stopped listening on port 33379
+1588076023738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileDHcYP3"
+1588076024155	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588076025254	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588076025254	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588076025254	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588076025254	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588076026467	Marionette	INFO	Listening on port 37259
+1588076026952	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=550512051, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=550512051, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=550512051, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=550512051 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=550512051 line 1 > eval, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PLayerTransaction::Msg_ReleaseLayer Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+1588076048979	Marionette	INFO	Stopped listening on port 37259
+1588076075391	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNmv10b"
+1588076075797	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588076076851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588076076851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588076076851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588076076851	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588076078078	Marionette	INFO	Listening on port 44715
+1588076078098	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=826018934, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=826018934, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=826018934, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=826018934 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=826018934 line 1 > eval, line 1: unreachable code after return statement
+1588076086853	Marionette	INFO	Stopped listening on port 44715
+1588076120601	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilePRWupL"
+1588076120999	addons.webextension.doh-rollout@mozilla.org	WARN	Loading extension 'doh-rollout@mozilla.org': Reading manifest: Invalid extension permission: networkStatus
+1588076121656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1588076121656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1588076121656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1588076121656	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1588076122847	Marionette	INFO	Listening on port 36883
+1588076123213	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1163828351, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1163828351, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1163828351, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1163828351 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1163828351 line 1 > eval, line 1: unreachable code after return statement
+1588076134815	Marionette	INFO	Stopped listening on port 36883
