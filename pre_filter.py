@@ -36,6 +36,10 @@ filter_set_lst = ['unh', 'ust', 'und', 'ugl', 'tfth', 'htr', 'htr17', 'htr18',
 
 scryData = scryData[~scryData['set'].isin(filter_set_lst)]
 
+filter_settype_lst = ['funny', 'token']
+
+scryData = scryData[~scryData['set_type'].isin(filter_set_lst)]
+
 print(scryData.info(verbose = True))
 print(' ')
 print(scryData.shape)
