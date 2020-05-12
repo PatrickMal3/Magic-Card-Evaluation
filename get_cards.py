@@ -79,7 +79,7 @@ def get_dates(page_json):
     return(date_lst)
 
 # retrieves all significant card infos and creates a dict with those infos
-def get_card_info(card_name):
+def create_card_info(card_name):
     time.sleep(0.1)
 
     # scryfall url
@@ -98,6 +98,7 @@ def get_card_info(card_name):
     try: mana_cost = page_json['mana_cost']
     except: mana_cost = None
     type_line = page_json['type_line']
+    layout = page_json['layout']
     try: oracle_text = page_json['oracle_text']
     except: oracle_text = None
     color_id = page_json['color_identity']
@@ -129,6 +130,7 @@ def get_card_info(card_name):
                  'cmc':[cmc],
                  'mana_cost':[mana_cost],
                  'type_line':[type_line],
+                 'layout':[layout],
                  'oracle_text':[oracle_text],
                  'color_id':[color_id],
                  'legalities':[legalities],
@@ -160,6 +162,7 @@ card_data_dict = {'names':[],
                   'cmc':[],
                   'mana_cost':[],
                   'type_line':[],
+                  'layout':[],
                   'oracle_text':[],
                   'color_id':[],
                   'legalities':[],
@@ -188,7 +191,7 @@ card_names = get_card_names()
 # gather all info
 # and assamble dataframe
 for name in card_names:
-    card_info = get_card_info(name)
+    card_info = create_card_info(name)
     card_dataframe = card_dataframe.append(card_info)
     # print dataframe shape as progress info
     # mtg has about 20000 cards
