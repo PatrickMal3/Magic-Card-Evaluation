@@ -198,4 +198,4 @@ for name in card_names:
     print(card_dataframe.shape)
 
 # save dataframe to csv file
-card_dataframe.to_csv('my_card_data.csv', index=False)
+card_dataframe.to_csv('card_data.csv', index=False)
