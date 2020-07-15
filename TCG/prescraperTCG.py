@@ -5,7 +5,7 @@ import re
 import pandas as pd
 import time
 
-card_data = pd.read_csv('missing_prices.csv', sep=',')
+card_data = pd.read_csv('card_data_plus_prices.csv', sep=',')
 
 # start browser
 driver = webdriver.Firefox()

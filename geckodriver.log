@@ -700,3 +700,63 @@ JavaScript error: resource://devtools/client/jsonview/converter-observer.js, lin
 1588756468357	Marionette	INFO	Listening on port 42183
 1588756468860	Marionette	WARN	TLS certificate errors will be ignored for this session
 1588756505829	Marionette	INFO	Stopped listening on port 42183
+1594753250251	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileIJZM4S"
+1594753252721	Marionette	INFO	Listening on port 36325
+1594753252757	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+1594753285975	Marionette	INFO	Stopped listening on port 36325
+1594753441199	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilefBK6t4"
+1594753443244	Marionette	INFO	Listening on port 41227
+1594753443625	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+1594753468264	Marionette	INFO	Stopped listening on port 41227
+1594753788336	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejGIJ6j"
+1594753790251	Marionette	INFO	Listening on port 40443
+1594753790633	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594753793526	Marionette	INFO	Stopped listening on port 40443
+1594754686685	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilerfdvYO"
+1594754689084	Marionette	INFO	Listening on port 40207
+1594754689099	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+1594755498918	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileBVN1zL"
+1594755501379	Marionette	INFO	Listening on port 40211
+1594755501426	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594755504769	Marionette	INFO	Stopped listening on port 40207
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+1594755662444	Marionette	INFO	Stopped listening on port 40211
+1594755666581	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileer0mIk"
+1594755668543	Marionette	INFO	Listening on port 42145
+1594755668908	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594755671783	Marionette	INFO	Stopped listening on port 42145
+1594756405110	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile67zvmu"
+1594756407135	Marionette	INFO	Listening on port 39075
+1594756407506	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+1594756416894	Marionette	INFO	Stopped listening on port 39075
+1594756444838	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileRLTbF5"
+1594756446774	Marionette	INFO	Listening on port 38657
+1594756447286	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594756450286	Marionette	INFO	Stopped listening on port 38657
+1594756513059	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilejgfNOm"
+1594756514980	Marionette	INFO	Listening on port 42437
+1594756515354	Marionette	WARN	TLS certificate errors will be ignored for this session
+1594756518550	Marionette	INFO	Stopped listening on port 42437
+1594756563825	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileafwIWv"
+1594756566302	Marionette	INFO	Listening on port 40893
+1594756566331	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/modules/URIFixup.jsm, line 281: NS_ERROR_FAILURE: Should pass a non-null uri
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1620681842, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1620681842, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1620681842, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1620681842 line 1 > eval, line 1: unreachable code after return statement
+JavaScript warning: https://shop.tcgplayer.com/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1620681842 line 1 > eval, line 1: unreachable code after return statement
+IPDL protocol error: Handler returned error code!
+
+###!!! [Parent][DispatchAsyncMessage] Error: PMessagePort::Msg_PostMessages Processing error: message was deserialized, but the handler returned false (indicating failure)
+
+1594765191839	Marionette	INFO	Stopped listening on port 40893

@@ -10,7 +10,7 @@ import re
 #######
 
 # card data
-card_data = pd.read_csv('newPrices.csv', sep=',')
+card_data = pd.read_csv('card_data_plus_prices.csv', sep=',')
 
 # URL constants
 my_lst = card_data['price'].astype(str)
@@ -117,19 +117,22 @@ def cardkingdom_scraper(card_name):
 # loop through all rows of dataframe
 for index, row in card_data.iterrows():
     # if card has no price yet scrape scryfall
-    if not re.match("[\d]{1,20}", my_lst[index]):
-        price = scry_scraper(row['id'])
+    ##########if not re.match("[\d]{1,20}", my_lst[index]):
+        ##########price = scry_scraper(row['id'])
         # if scryfall has no price info, scrape tcgplayer
-        if not re.match("[\d]{1,20}", str(price)):
-            price = tcg_scraper(row['name'], row['set_name'])
+        if not re.match("[\d]{1,20}", my_lst[index]):#str(price)):
+            price = tcg_scraper(row['names'], row['set_name'])
             # if tcgplayer has no price info, scrape cardkingdom
             if not re.match("[\d]{1,20}", price):
-                price = cardkingdom_scraper(row['name'])
+                price = cardkingdom_scraper(row['names'])
         # save price in list at index
-        my_lst[index] = price
+        try:
+            my_lst[index] = price
+        except:
+            my_lst[index] = "NaN"
         # print the process clock
         process_clock(index, len(my_lst))
         # save price list in dataframe
         card_data['price'] = my_lst
         # save new dataframe
-        card_data.to_csv('newPrices.csv', index = False)
+        card_data.to_csv('card_data_plus_prices.csv', index = False)
