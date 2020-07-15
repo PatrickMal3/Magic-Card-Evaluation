@@ -8,13 +8,13 @@ import re
 #######
 
 # data includes Oracle Texts
-scryData = pd.read_csv('newPrices.csv')
+scryData = pd.read_csv('card_data.csv')
 
 # Emergency filter:
-filter_name_lst = ['Eutropia the Twice-Favored',
-                   'Hero of the Pride']
+#filter_name_lst = ['Eutropia the Twice-Favored',
+#                   'Hero of the Pride']
 
-scryData = scryData[~scryData['name'].isin(filter_name_lst)]
+#scryData = scryData[~scryData['name'].isin(filter_name_lst)]
 
 #######
 # define new dataframe
@@ -28,7 +28,7 @@ myData = pd.DataFrame(lst)
 #######
 
 #myData['id'] = scryData['id']
-myData['name'] = scryData['name']
+myData['name'] = scryData['names']
 
 # break up type line
 #myData['type'] = scryData['type_line']

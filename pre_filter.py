@@ -7,7 +7,7 @@ import re
 #######
 
 # data includes Oracle Texts
-scryData = pd.read_json('scryfall-oracle-cards.json')
+scryData = pd.read_csv('card_data.json')
 
 
 #######
