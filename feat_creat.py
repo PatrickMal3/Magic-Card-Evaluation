@@ -8,7 +8,7 @@ import re
 #######
 
 # data includes Oracle Texts
-scryData = pd.read_csv('card_data.csv')
+scryData = pd.read_csv('filtered_card_data.csv')
 
 # Emergency filter:
 #filter_name_lst = ['Eutropia the Twice-Favored',
@@ -43,8 +43,10 @@ myData['is_planeswalker'] = scryData['type_line'].str.contains('Planeswalker', r
 myData['is_artifact'] = scryData['type_line'].str.contains('Artifact', regex = False).astype(int)
 
 myData['cmc'] = scryData['cmc']
-scryData['released_at'] = pd.to_datetime(scryData['released_at'], errors = 'coerce')
-myData['year'] = scryData['released_at'].dt.year
+scryData['first_printing'] = pd.to_datetime(scryData['last_printing'], errors = 'coerce')
+myData['first_printing'] = scryData['first_printing'].dt.year
+scryData['last_printing'] = pd.to_datetime(scryData['last_printing'], errors = 'coerce')
+myData['last_printing'] = scryData['last_printing'].dt.year
 myData['is_id_white'] = scryData['color_identity'].str.contains('W', regex = False).astype(int)
 myData['is_id_blue'] = scryData['color_identity'].str.contains('U', regex = False).astype(int)
 myData['is_id_black'] = scryData['color_identity'].str.contains('B', regex = False).astype(int)
@@ -60,6 +62,7 @@ myData['is_pauper_legal'] = scryData['legalities'].str.contains("'pauper': 'lega
 
 myData['is_reserved'] = scryData['reserved'].astype(int)
 myData['is_reprint'] = scryData['reprint'].astype(int)
+myData['num_printings'] = scryData['num_printings']
 #myData['set'] = scryData['set']
 #myData['rarity'] = scryData['rarity']
 myData['rarity'] = scryData['rarity'].replace({'mythic' : 1,
@@ -69,13 +72,13 @@ myData['rarity'] = scryData['rarity'].replace({'mythic' : 1,
 
 ##### DANGER some values are FALSE
 myData['edhrec_rank'] = scryData['edhrec_rank'].fillna(20000)
-scryData['power'] = scryData['power'].str.replace('.\+\*', '*', regex = True)
-scryData['power'] = scryData['power'].str.replace('*', '-1', regex = False)
-scryData['power'] = scryData['power'].fillna(-2)
+#scryData['power'] = scryData['power'].str.replace('.\+\*', '*', regex = True)
+#scryData['power'] = scryData['power'].str.replace('*', '-1', regex = False)
+#scryData['power'] = scryData['power'].fillna(-2)
 myData['power'] = scryData['power']#.replace({'*' : -2})
-scryData['toughness'] = scryData['toughness'].str.replace('.\+\*', '*', regex = True)
-scryData['toughness'] = scryData['toughness'].str.replace('*', '-1', regex = False)
-scryData['toughness'] = scryData['toughness'].fillna(-2)
+#scryData['toughness'] = scryData['toughness'].str.replace('.\+\*', '*', regex = True)
+#scryData['toughness'] = scryData['toughness'].str.replace('*', '-1', regex = False)
+#scryData['toughness'] = scryData['toughness'].fillna(-2)
 myData['toughness'] = scryData['toughness']#.replace({'*' : -2})
 myData['price'] = scryData['price']
 
