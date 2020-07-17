@@ -53,10 +53,10 @@ def get_price(page_json):
         if 'paper' in printing['games'] and printing['oversized'] == False:
             if printing['prices']['usd'] != None:
                 try: price_lst.append(float(printing['prices']['usd']))
-                except: price_lst.append(float(777.77))
+                except: price_lst.append(float(7777777.77))
             else:
                 try: price_lst.append(float(printing['prices']['usd_foil']))
-                except: price_lst.append(float(777.77))
+                except: price_lst.append(float(7777777.77))
 
     try:
         price_lst.sort()

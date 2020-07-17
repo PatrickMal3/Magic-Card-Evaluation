@@ -10,11 +10,12 @@ scryData = pd.read_csv('card_data.csv')
 #######
 
 # layouts to filter out
+### transform might be interesting!!!
 filter_layout_lst = ['art_series', 'augment', 'double_faced_token', 'emblem',
             'host', 'planar', 'scheme', 'token', 'vanguard']
 scryData = scryData[~scryData['layout'].isin(filter_layout_lst)]
 
-# filter corrupted and special
+# filter corrupted 
 filter_names_lst = ['Shu General', 'Ancient Spider', 'Longbow Archer',
                     'Livonya Silone',
                     'Noxious Hydra Breath', 'Tel-Jilad Archers',
@@ -22,14 +23,29 @@ filter_names_lst = ['Shu General', 'Ancient Spider', 'Longbow Archer',
                     'Lu Bu, Master-at-Arms']
 scryData = scryData[~scryData['names'].isin(filter_names_lst)]
 
+# filter meld cards
+filter_names_lst = ['Brisela, Voice of Nightmares',
+                    'Chittering Host',
+                    'Hanweir, the Writhing Township']
+scryData = scryData[~scryData['names'].isin(filter_names_lst)]
+
+# filter universally banned cards
+filter_names_lst = ['Cleanse', 'Imprison', 'Jihad', 'Crusade',
+                    'Invoke Prejudice', 'Pradesh Gypsies',
+                    'Stone-Throwing Devils']
+scryData = scryData[~scryData['names'].isin(filter_names_lst)]
+
 # filter by sets
 filter_set_lst = ['unh', 'ust', 'und', 'ugl', 'tfth', 'htr', 'htr17', 'htr18',
                   'ana', 'tbth', 'pcel', 'tdag', 'prm', 'hho']
 scryData = scryData[~scryData['set_name'].isin(filter_set_lst)]
 
-filter_settype_lst = ['funny', 'token']#, 'archenemy', 'planechase']
+filter_settype_lst = ['funny', 'token', 'archenemy', 'planechase']
 scryData = scryData[~scryData['set_type'].isin(filter_settype_lst)]
 
+scryData = scryData[scryData['price'].notna()]
+
+#scryData = scryData[scryData['is_commander_legal'] == 1]
 
 print(scryData.info(verbose = True))
 print(' ')
