@@ -43,6 +43,7 @@ scryData = scryData[~scryData['set_name'].isin(filter_set_lst)]
 filter_settype_lst = ['funny', 'token', 'archenemy', 'planechase']
 scryData = scryData[~scryData['set_type'].isin(filter_settype_lst)]
 
+# filter cards with no price
 scryData = scryData[scryData['price'].notna()]
 
 print(scryData.info(verbose = True))
