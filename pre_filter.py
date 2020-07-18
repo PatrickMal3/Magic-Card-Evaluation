@@ -45,8 +45,6 @@ scryData = scryData[~scryData['set_type'].isin(filter_settype_lst)]
 
 scryData = scryData[scryData['price'].notna()]
 
-#scryData = scryData[scryData['is_commander_legal'] == 1]
-
 print(scryData.info(verbose = True))
 print(' ')
 print(scryData.shape)

@@ -47,11 +47,11 @@ scryData['first_printing'] = pd.to_datetime(scryData['last_printing'], errors = 
 myData['first_printing'] = scryData['first_printing'].dt.year
 scryData['last_printing'] = pd.to_datetime(scryData['last_printing'], errors = 'coerce')
 myData['last_printing'] = scryData['last_printing'].dt.year
-myData['is_id_white'] = scryData['color_identity'].str.contains('W', regex = False).astype(int)
-myData['is_id_blue'] = scryData['color_identity'].str.contains('U', regex = False).astype(int)
-myData['is_id_black'] = scryData['color_identity'].str.contains('B', regex = False).astype(int)
-myData['is_id_red'] = scryData['color_identity'].str.contains('R', regex = False).astype(int)
-myData['is_id_green'] = scryData['color_identity'].str.contains('G', regex = False).astype(int)
+myData['is_id_white'] = scryData['color_id'].str.contains('W', regex = False).astype(int)
+myData['is_id_blue'] = scryData['color_id'].str.contains('U', regex = False).astype(int)
+myData['is_id_black'] = scryData['color_id'].str.contains('B', regex = False).astype(int)
+myData['is_id_red'] = scryData['color_id'].str.contains('R', regex = False).astype(int)
+myData['is_id_green'] = scryData['color_id'].str.contains('G', regex = False).astype(int)
 scryData['legalities'] = scryData['legalities'].astype(str)
 myData['is_standard_legal'] = scryData['legalities'].str.contains("'standard': 'legal'", regex = False).astype(int)
 myData['is_commander_legal'] = scryData['legalities'].str.contains("'commander': 'legal'", regex = False).astype(int)
@@ -60,8 +60,8 @@ myData['is_pioneer_legal'] = scryData['legalities'].str.contains("'pioneer': 'le
 myData['is_legacy_legal'] = scryData['legalities'].str.contains("'legacy': 'legal'", regex = False).astype(int)
 myData['is_pauper_legal'] = scryData['legalities'].str.contains("'pauper': 'legal'", regex = False).astype(int)
 
-myData['is_reserved'] = scryData['reserved'].astype(int)
-myData['is_reprint'] = scryData['reprint'].astype(int)
+myData['is_reserved'] = scryData['is_reserved'].astype(int)
+myData['is_reprint'] = scryData['is_reprint'].astype(int)
 myData['num_printings'] = scryData['num_printings']
 #myData['set'] = scryData['set']
 #myData['rarity'] = scryData['rarity']
