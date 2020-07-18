@@ -10,7 +10,7 @@ myData = pd.read_csv('fin_card_data.csv')
 sb.set(style='ticks', color_codes=True)
 
 # price vs edhrec_rank
-ax = sb.scatterplot(y='year', x='edhrec_rank', 
+ax = sb.scatterplot(y='first_printing', x='edhrec_rank', 
                     hue='is_commander_legal',
                     marker='+', data=myData)
 #ax.set(xlim=(0,10000))
