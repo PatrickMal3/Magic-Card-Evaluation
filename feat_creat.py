@@ -88,12 +88,31 @@ scryData['toughness'] = scryData['toughness'].str.replace('*', '-3', regex = Fal
 scryData['toughness'] = scryData['toughness'].fillna(-5)
 myData['toughness'] = scryData['toughness']#.replace({'*' : -2})
 
+########
+# create Bulk variable
+########
+myData['exp'] = [1 if price >= 1 else 0 for price in scryData['price']]
+
+
 # price
 myData['price'] = scryData['price']
 
 
 # set type could be interesting
-#myData['set_type'] = scryData['set_type']
+myData['set_enum'] = scryData['set_type'].replace({'core' : 1,
+                                               'expansion' : 2,
+                                               'commander' : 3,
+                                               'masters' : 4,
+                                               'starter' : 4,
+                                               'duel_deck' : 4,
+                                               'draft_innovation' : 4,
+                                               'box' : 4,
+                                               'memorabilia' : 4,
+                                               'treasure_chest' : 4,
+                                               'promo' : 4})
+
+# in booster
+myData['is_booster'] = scryData['is_booster']
 
 # oracle text must be put into diegestible data
 #myData['oracle_text'] = scryData['oracle_text']
