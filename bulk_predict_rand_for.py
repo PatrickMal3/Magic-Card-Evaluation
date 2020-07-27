@@ -5,6 +5,7 @@ from sklearn.metrics import confusion_matrix, accuracy_score, recall_score, prec
 import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_curve
 from sklearn.metrics import plot_precision_recall_curve
+from sklearn.model_selection import cross_val_score
 
 # load in data
 scryData = pd.read_csv('fin_card_data.csv')
@@ -13,6 +14,11 @@ y = scryData['exp']
 bulkData = scryData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['name'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
+bulkData = bulkData.drop(['edhrec_rank'], axis=1)
+
+bulkData = scryData[['rarity', 'cmc', 'first_printing', 'last_printing',
+                     'num_printings', 'set_enum', 'is_legendary',
+                     'edhrec_rank']]
 
 # train test split
 X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
@@ -21,11 +27,21 @@ X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 RF = RandomForestClassifier()
 RF.fit(X_train, y_train)
 
+#scores = cross_val_score(RF, bulkData, y, cv=20, scoring='f1_macro')
+#print(scores)
+#print(scores.mean())
+
 pred = RF.predict(X_test)
 print(confusion_matrix(pred, y_test))
 print(accuracy_score(pred, y_test))
 print(recall_score(pred, y_test))
 print(precision_score(pred, y_test))
+
+feature_importances = pd.DataFrame(RF.feature_importances_,
+                                   index = X_train.columns,
+                                    columns=['importance']).sort_values('importance',                                                                 ascending=False)
+
+print(feature_importances)
 
 probs = RF.predict_proba(X_test)
 probs = probs[:, 1]
