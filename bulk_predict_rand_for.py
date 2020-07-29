@@ -24,8 +24,10 @@ bulkData = bulkData.drop(['price'], axis=1)
 
 
 # RF classifier
-RF = RandomForestClassifier()
+RF = RandomForestClassifier(n_estimators=1600, min_samples_split=5, min_samples_leaf=1,
+                            max_features='sqrt', max_depth=70, bootstrap=False)
 
+#RF = RandomForestClassifier()
 # KFold Scoring
 #acc_scores = cross_val_score(RF, bulkData, y, cv=10, scoring='accuracy')
 #rec_scores = cross_val_score(RF, bulkData, y, cv=10, scoring='recall')
@@ -93,6 +95,11 @@ print('')
 print('Train-Test-Split precision:')
 print(precision_score(pred, y_test))
 print('')
+
+X_test['exp'] = y_test
+X_test['pred'] = pred
+print(X_test)
+X_test.to_csv('results.csv', index=False)
 
 #print('Most important features:')
 #feature_importances = pd.DataFrame(RF.feature_importances_,
