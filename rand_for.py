@@ -10,11 +10,10 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
 
 # load in data
-scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
+scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv', index_col=0)
 
 y = scryData['exp']
 bulkData = scryData.drop(['exp'], axis=1)
-bulkData = bulkData.drop(['name'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
 #bulkData = bulkData.drop(['edhrec_rank'], axis=1)
 
@@ -96,10 +95,10 @@ print('Train-Test-Split precision:')
 print(precision_score(pred, y_test))
 print('')
 
-X_test['exp'] = y_test
-X_test['pred'] = pred
-print(X_test)
-X_test.to_csv('results.csv', index=False)
+full_pred = RF.predict(bulkData)
+bulkData['exp'] = y
+bulkData['pred'] = full_pred
+bulkData.to_csv('results.csv', index=True)
 
 #print('Most important features:')
 #feature_importances = pd.DataFrame(RF.feature_importances_,

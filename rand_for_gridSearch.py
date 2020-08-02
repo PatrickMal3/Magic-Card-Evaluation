@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, recall_score, precision_score, roc_curve
 import matplotlib.pyplot as plt
 from sklearn.metrics import precision_recall_curve
@@ -9,6 +9,8 @@ from sklearn.metrics import plot_precision_recall_curve
 from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RandomizedSearchCV
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
@@ -40,21 +42,44 @@ random_grid = {'n_estimators': n_estimators,
                'min_samples_leaf': min_samples_leaf,
                'bootstrap': bootstrap}
 
+n_neighbors = [int(x) for x in np.linspace(start = 2, stop = 20, num = 10)]
+weights = ['uniform', 'distance']
+algorithm = ['auto', 'ball_tree', 'kd_tree', 'brute']
+leaf_size = [int(x) for x in np.linspace(start = 5, stop = 100, num = 10)]
+metric = ['minkowski', 'manhattan', 'euclidean']
+random_grid = {'n_neighbors': n_neighbors,
+               'weights': weights,
+               'algorithm': algorithm,
+               'leaf_size': leaf_size,
+               'metric': metric}
+
+C = [1,10, 100]
+gamma = [1, 0.1, 10, 100]
+kernel = ['poly', 'rbf', 'linear']
+random_grid = {'C': C,
+               'gamma': gamma,
+               'kernel': kernel}
+
 # RF classifier
 RF = RandomForestClassifier()
-rf_random = RandomizedSearchCV(estimator = RF, param_distributions = random_grid, 
-                               n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+EXTRA = ExtraTreesClassifier()
+KNN = KNeighborsClassifier()
+mySVC = SVC(C=2, gamma=1, kernel='linear')
+rf_random = RandomizedSearchCV(estimator = mySVC, param_distributions = random_grid, 
+                               n_iter = 20, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
 
 # train test split
 X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 
 # fit the train-test-split model
-RF.fit(X_train, y_train)
+#RF.fit(X_train, y_train)
 rf_random.fit(X_train, y_train)
+#mySVC.fit(X_train, y_train)
 print(rf_random.best_params_)
 
-pred = RF.predict(X_test)
+pred = rf_random.predict(X_test)
+#pred = mySVC.predict(X_test)
 print('Train-Test-Split Confusion Matrix:')
 print(confusion_matrix(pred, y_test))
 print('')

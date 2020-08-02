@@ -8,7 +8,7 @@ import re
 #######
 
 # data includes Oracle Texts
-scryData = pd.read_csv('filtered_card_data.csv')
+scryData = pd.read_csv('2020_07_14_data_processed/filtered_card_data.csv')
 
 #######
 # define new dataframe
@@ -37,7 +37,7 @@ myData['is_artifact'] = scryData['type_line'].str.contains('Artifact', regex = F
 myData['cmc'] = scryData['cmc']
 
 # printings
-scryData['first_printing'] = pd.to_datetime(scryData['last_printing'], errors = 'coerce')
+scryData['first_printing'] = pd.to_datetime(scryData['first_printing'], errors = 'coerce')
 myData['first_printing'] = scryData['first_printing'].dt.year
 scryData['last_printing'] = pd.to_datetime(scryData['last_printing'], errors = 'coerce')
 myData['last_printing'] = scryData['last_printing'].dt.year
@@ -140,4 +140,4 @@ print(scryData.shape)
 # save cleaned dataframe to csv
 #######
 
-myData.to_csv('fin_card_data.csv', index=False)
+myData.to_csv('2020_07_14_data_processed/fin_card_data.csv', index=False)

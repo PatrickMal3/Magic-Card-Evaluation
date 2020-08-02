@@ -30,11 +30,17 @@ bulkData = pd.DataFrame(bulkData, columns=['is_legendary','is_creature','is_inst
 
 
 # classifier
-RF = RandomForestClassifier()
+RF = RandomForestClassifier(n_estimators=1600, min_samples_split=5, min_samples_leaf=1,
+                             max_features='sqrt', max_depth=70, bootstrap=False)
 
-EXTRA = ExtraTreesClassifier()
+EXTRA = ExtraTreesClassifier(n_estimators=400, min_samples_split=5, min_samples_leaf=1,
+                             max_features='auto', max_depth=90, bootstrap=False)
 
-vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA)], voting='hard')
+KNN = KNeighborsClassifier()
+
+mySVC = SVC(kernel='rbf', C=1, gamma=1)
+
+vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
 
 # Stratified KFold Scoring
 acc = []
@@ -48,8 +54,8 @@ for train_index, test_index in skf.split(bulkData, y):
     X1_train, X1_test = bulkData.iloc[train_index], bulkData.iloc[test_index]
     y1_train, y1_test = y.iloc[train_index], y.iloc[test_index]
 
-    vtc.fit(X1_train, y1_train)
-    prediction = vtc.predict(X1_test)
+    mySVC.fit(X1_train, y1_train)
+    prediction = mySVC.predict(X1_test)
     acc_score = accuracy_score(prediction, y1_test)
     acc.append(acc_score)
     rec_score = recall_score(prediction, y1_test)
