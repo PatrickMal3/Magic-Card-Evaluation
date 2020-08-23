@@ -53,9 +53,9 @@ random_grid = {'n_neighbors': n_neighbors,
                'leaf_size': leaf_size,
                'metric': metric}
 
-C = [1,10, 100]
-gamma = [1, 0.1, 10, 100]
-kernel = ['poly', 'rbf', 'linear']
+C = [1,10,100]
+gamma = [1, 0.1, 10, 100, 0.01]
+kernel = ['poly', 'rbf', 'linear', 'sigmoid']
 random_grid = {'C': C,
                'gamma': gamma,
                'kernel': kernel}
@@ -64,7 +64,7 @@ random_grid = {'C': C,
 RF = RandomForestClassifier()
 EXTRA = ExtraTreesClassifier()
 KNN = KNeighborsClassifier()
-mySVC = SVC(C=2, gamma=1, kernel='linear')
+mySVC = SVC()
 rf_random = RandomizedSearchCV(estimator = mySVC, param_distributions = random_grid, 
                                n_iter = 20, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 

@@ -38,7 +38,8 @@ EXTRA = ExtraTreesClassifier(n_estimators=400, min_samples_split=5, min_samples_
 
 KNN = KNeighborsClassifier()
 
-mySVC = SVC(kernel='rbf', C=1, gamma=1)
+#mySVC = SVC(kernel='rbf', C=10, gamma=0.1)
+mySVC = SVC(kernel='poly', C=10, gamma=1)
 
 vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
 

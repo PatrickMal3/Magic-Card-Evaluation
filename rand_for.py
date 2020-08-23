@@ -81,6 +81,13 @@ X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 # fit the train-test-split model
 RF.fit(X_train, y_train)
 
+# partial train test split
+newData = scryData[scryData['is_instant'] == 1]
+y = newData['exp']
+newData = newData.drop(['exp'], axis=1)
+newData = newData.drop(['price'], axis=1)
+X_train, X_test, y_train, y_test = train_test_split(newData, y, test_size=0.33)
+
 pred = RF.predict(X_test)
 print('Train-Test-Split Confusion Matrix:')
 print(confusion_matrix(pred, y_test))
@@ -95,10 +102,10 @@ print('Train-Test-Split precision:')
 print(precision_score(pred, y_test))
 print('')
 
-full_pred = RF.predict(bulkData)
-bulkData['exp'] = y
-bulkData['pred'] = full_pred
-bulkData.to_csv('results.csv', index=True)
+full_pred = RF.predict(newData)
+newData['exp'] = y
+newData['pred'] = full_pred
+newData.to_csv('results.csv', index=True)
 
 #print('Most important features:')
 #feature_importances = pd.DataFrame(RF.feature_importances_,
