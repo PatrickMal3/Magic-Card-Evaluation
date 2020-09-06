@@ -2,7 +2,7 @@ import pandas as pd
 import datetime as dt
 import re
 
-scryData = pd.read_csv('2020_07_14_data/card_data.csv')
+scryData = pd.read_csv('2020_08_22_data/card_data.csv')
 
 
 #######
@@ -54,4 +54,4 @@ print(scryData.shape)
 # save cleaned dataframe to csv
 #######
 
-scryData.to_csv('2020_07_14_data_processed/filtered_card_data.csv', index=False)
+scryData.to_csv('2020_08_22_data_processed/filtered_card_data.csv', index=False)

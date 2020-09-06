@@ -10,7 +10,7 @@ from sklearn.model_selection import StratifiedKFold
 from sklearn.model_selection import cross_val_score
 
 # load in data
-scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv', index_col=0)
+scryData = pd.read_csv('2020_08_22_data_processed/fin_card_data.csv', index_col=0)
 
 y = scryData['exp']
 bulkData = scryData.drop(['exp'], axis=1)
@@ -82,7 +82,7 @@ X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 RF.fit(X_train, y_train)
 
 # partial train test split
-newData = scryData[scryData['is_instant'] == 1]
+newData = scryData[scryData['is_artifact'] == 1]
 y = newData['exp']
 newData = newData.drop(['exp'], axis=1)
 newData = newData.drop(['price'], axis=1)
