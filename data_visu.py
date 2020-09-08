@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-scryData = pd.read_csv('fin_card_data.csv')
+scryData = pd.read_csv('2020_08_22_data_processed/fin_card_data.csv')
 
 basicCorr = scryData.corr(method='spearman')
 print(basicCorr.info(verbose=True))
