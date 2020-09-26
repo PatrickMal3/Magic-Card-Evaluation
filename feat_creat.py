@@ -8,7 +8,7 @@ import re
 #######
 
 # data includes Oracle Texts
-scryData = pd.read_csv('2020_08_22_data_processed/filtered_card_data.csv')
+scryData = pd.read_csv('2020_09_25_data_processed/filtered_card_data.csv')
 
 #######
 # define new dataframe
@@ -140,4 +140,4 @@ print(scryData.shape)
 # save cleaned dataframe to csv
 #######
 
-myData.to_csv('2020_08_22_data_processed/fin_card_data.csv', index=False)
+myData.to_csv('2020_09_25_data_processed/fin_card_data.csv', index=False)
