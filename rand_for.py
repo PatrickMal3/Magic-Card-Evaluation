@@ -15,9 +15,11 @@ from sklearn.preprocessing import MinMaxScaler
 # load in data
 scryData = pd.read_csv('2020_09_25_data_processed/fin_card_data.csv', index_col=0)
 
-testyear = 2016
+#testyear = 2016
 bulkData = scryData
-bulkData = scryData[scryData['first_printing'] == testyear]
+#filter_year_lst = [2000,2001,2002,2003]
+#bulkData = bulkData[bulkData['first_printing'].isin(filter_year_lst)]
+#bulkData = scryData[scryData['first_printing'] != testyear]
 #bulkData = bulkData[bulkData['last_printing'] != 2019]
 #bulkData = bulkData[bulkData['price'] < 500]
 y = bulkData['exp']
@@ -92,7 +94,7 @@ print(np.array(pre).mean())
 print('')
 
 bulkData = scryData
-bulkData = scryData[scryData['first_printing'] != testyear]
+#bulkData = scryData[scryData['first_printing'] == testyear]
 #bulkData = bulkData[bulkData['last_printing'] != 2019]
 #bulkData = bulkData[bulkData['price'] < 500]
 y = bulkData['exp']
