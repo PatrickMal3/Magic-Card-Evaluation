@@ -19,3 +19,7 @@ print(basicCorr)
 #
 #sns.regplot(x='edhrec_rank', y='price', data=scryData, line_kws={'color':'red'})
 #plt.show()
+
+
+sns.countplot(x='last_printing', data=scryData)
+plt.show()

@@ -36,13 +36,14 @@ RF = RandomForestClassifier(n_estimators=1600, min_samples_split=5, min_samples_
 EXTRA = ExtraTreesClassifier(n_estimators=400, min_samples_split=5, min_samples_leaf=1,
                              max_features='auto', max_depth=90, bootstrap=False)
 
-KNN = KNeighborsClassifier()
+KNN = KNeighborsClassifier(weights='distance', n_neighbors=18, metric='manhattan',
+        leaf_size=89, algorithm='ball_tree')
 
 #mySVC = SVC(kernel='rbf', C=10, gamma=0.1)
 mySVC = SVC(kernel='poly', C=10, gamma=1)
 
-vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
-vtc = VotingClassifier(estimators=[('rf', RF), ('rf2', RF), ('extra', EXTRA)], voting='hard')
+#vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
+vtc = VotingClassifier(estimators=[('rf', RF), ('knn', KNN), ('extra', EXTRA)], voting='hard')
 
 # Stratified KFold Scoring
 acc = []

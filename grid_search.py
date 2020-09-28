@@ -11,6 +11,7 @@ from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import RandomizedSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
+from sklearn.svm import LinearSVC
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
@@ -54,19 +55,19 @@ random_grid = {'n_neighbors': n_neighbors,
                'metric': metric}
 
 C = [1,10,100]
-gamma = [1, 0.1, 10, 100, 0.01]
-kernel = ['poly', 'rbf', 'linear', 'sigmoid']
-random_grid = {'C': C,
-               'gamma': gamma,
-               'kernel': kernel}
+gamma = [1, 0.1, 10, 0.01]
+kernel = ['linear']
+#random_grid = {'C': C,
+#               'gamma': gamma}
+             
 
 # RF classifier
 RF = RandomForestClassifier()
 EXTRA = ExtraTreesClassifier()
 KNN = KNeighborsClassifier()
-mySVC = SVC()
-rf_random = RandomizedSearchCV(estimator = mySVC, param_distributions = random_grid, 
-                               n_iter = 20, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+mySVC = LinearSVC()
+rf_random = RandomizedSearchCV(estimator = KNN, param_distributions = random_grid, 
+                               n_iter = 50, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
 
 # train test split
