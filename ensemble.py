@@ -43,7 +43,7 @@ KNN = KNeighborsClassifier(weights='distance', n_neighbors=18, metric='manhattan
 mySVC = SVC(kernel='poly', C=10, gamma=1)
 
 #vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
-vtc = VotingClassifier(estimators=[('rf', RF), ('knn', KNN), ('extra', EXTRA)], voting='hard')
+vtc = VotingClassifier(estimators=[('rf', RF)], voting='hard')
 
 # Stratified KFold Scoring
 acc = []

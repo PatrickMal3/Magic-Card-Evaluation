@@ -103,13 +103,13 @@ myData['set_enum'] = scryData['set_type'].replace({'core' : 1,
                                                'expansion' : 2,
                                                'commander' : 3,
                                                'masters' : 4,
-                                               'starter' : 4,
-                                               'duel_deck' : 4,
-                                               'draft_innovation' : 4,
-                                               'box' : 4,
-                                               'memorabilia' : 4,
-                                               'treasure_chest' : 4,
-                                               'promo' : 4})
+                                               'starter' : 5,
+                                               'duel_deck' : 6,
+                                               'draft_innovation' : 7,
+                                               'box' : 8,
+                                               'memorabilia' : 9,
+                                               'treasure_chest' : 10,
+                                               'promo' : 11})
 
 # in booster
 myData['is_booster'] = scryData['is_booster']

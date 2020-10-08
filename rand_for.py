@@ -17,8 +17,8 @@ scryData = pd.read_csv('2020_09_25_data_processed/fin_card_data.csv', index_col=
 
 #testyear = 2016
 bulkData = scryData
-filter_lst = [1,2,3]
-bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
+#filter_lst = [1,2,3]
+#bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
 #bulkData = scryData[scryData['first_printing'] != testyear]
 #bulkData = bulkData[bulkData['last_printing'] != 2019]
 #bulkData = bulkData[bulkData['price'] < 500]
@@ -94,7 +94,7 @@ print(np.array(pre).mean())
 print('')
 
 bulkData = scryData
-bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
+#bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
 #bulkData = scryData[scryData['first_printing'] == testyear]
 #bulkData = bulkData[bulkData['last_printing'] != 2019]
 #bulkData = bulkData[bulkData['price'] < 500]
