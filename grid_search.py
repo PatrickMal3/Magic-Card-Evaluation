@@ -12,6 +12,7 @@ from sklearn.model_selection import RandomizedSearchCV
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
+from sklearn.ensemble import GradientBoostingClassifier
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
@@ -29,45 +30,55 @@ bulkData = bulkData.drop(['price'], axis=1)
 
 
 
-n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
-max_features = ['auto', 'sqrt']
-max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
-max_depth.append(None)
-min_samples_split = [2, 5, 10]
-min_samples_leaf = [1, 2, 4]
-bootstrap = [True, False]# Create the random grid
-random_grid = {'n_estimators': n_estimators,
-               'max_features': max_features,
-               'max_depth': max_depth,
-               'min_samples_split': min_samples_split,
-               'min_samples_leaf': min_samples_leaf,
-               'bootstrap': bootstrap}
-
-n_neighbors = [int(x) for x in np.linspace(start = 2, stop = 20, num = 10)]
-weights = ['uniform', 'distance']
-algorithm = ['auto', 'ball_tree', 'kd_tree', 'brute']
-leaf_size = [int(x) for x in np.linspace(start = 5, stop = 100, num = 10)]
-metric = ['minkowski', 'manhattan', 'euclidean']
-random_grid = {'n_neighbors': n_neighbors,
-               'weights': weights,
-               'algorithm': algorithm,
-               'leaf_size': leaf_size,
-               'metric': metric}
-
-C = [1,10,100]
-gamma = [1, 0.1, 10, 0.01]
-kernel = ['linear']
+#n_estimators = [int(x) for x in np.linspace(start = 200, stop = 2000, num = 10)]
+#max_features = ['auto', 'sqrt']
+#max_depth = [int(x) for x in np.linspace(10, 110, num = 11)]
+#max_depth.append(None)
+#min_samples_split = [2, 5, 10]
+#min_samples_leaf = [1, 2, 4]
+#bootstrap = [True, False]# Create the random grid
+#random_grid = {'n_estimators': n_estimators,
+#               'max_features': max_features,
+#               'max_depth': max_depth,
+#               'min_samples_split': min_samples_split,
+#               'min_samples_leaf': min_samples_leaf,
+#               'bootstrap': bootstrap}
+#
+#n_neighbors = [int(x) for x in np.linspace(start = 2, stop = 20, num = 10)]
+#weights = ['uniform', 'distance']
+#algorithm = ['auto', 'ball_tree', 'kd_tree', 'brute']
+#leaf_size = [int(x) for x in np.linspace(start = 5, stop = 100, num = 10)]
+#metric = ['minkowski', 'manhattan', 'euclidean']
+#random_grid = {'n_neighbors': n_neighbors,
+#               'weights': weights,
+#               'algorithm': algorithm,
+#               'leaf_size': leaf_size,
+#               'metric': metric}
+#
+#C = [1,10,100]
+#gamma = [1, 0.1, 10, 0.01]
+#kernel = ['linear']
 #random_grid = {'C': C,
 #               'gamma': gamma}
              
+
+n_estimators = [5, 20, 50, 100, 200, 400, 800, 1500]
+learning_rate = [0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1]
+max_features = [2, 3, 4, 5, 7, 10]
+max_depth = [2, 4, 8, 16, 32, 64]
+random_grid = {'n_estimators':n_estimators, 'learning_rate':learning_rate,
+               'max_features':max_features, 'max_depth':max_depth}
+
+
 
 # RF classifier
 RF = RandomForestClassifier()
 EXTRA = ExtraTreesClassifier()
 KNN = KNeighborsClassifier()
 mySVC = LinearSVC()
-rf_random = RandomizedSearchCV(estimator = KNN, param_distributions = random_grid, 
-                               n_iter = 50, cv = 3, verbose=2, random_state=42, n_jobs = -1)
+gbc = GradientBoostingClassifier()
+rf_random = RandomizedSearchCV(estimator = gbc, param_distributions = random_grid, 
+                               n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
 
 # train test split

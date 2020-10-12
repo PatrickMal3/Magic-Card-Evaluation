@@ -7,12 +7,17 @@ from sklearn.svm import LinearSVC, SVC
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn import svm
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
 
-y = scryData['exp']
-bulkData = scryData.drop(['exp'], axis=1)
+bulkData = scryData
+#filter_lst = [1,2]
+#bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
+y = bulkData['exp']
+bulkData = bulkData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['name'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
 #bulkData = bulkData.drop(['edhrec_rank'], axis=1)
@@ -30,7 +35,7 @@ bulkData = pd.DataFrame(bulkData, columns=['is_legendary','is_creature','is_inst
 
 
 # classifier
-RF = RandomForestClassifier(n_estimators=1600, min_samples_split=5, min_samples_leaf=1,
+RF = RandomForestClassifier(n_estimators=800, min_samples_split=5, min_samples_leaf=1,
                              max_features='sqrt', max_depth=70, bootstrap=False)
 
 EXTRA = ExtraTreesClassifier(n_estimators=400, min_samples_split=5, min_samples_leaf=1,
@@ -39,11 +44,20 @@ EXTRA = ExtraTreesClassifier(n_estimators=400, min_samples_split=5, min_samples_
 KNN = KNeighborsClassifier(weights='distance', n_neighbors=18, metric='manhattan',
         leaf_size=89, algorithm='ball_tree')
 
+GBC = GradientBoostingClassifier(n_estimators=800, learning_rate=0.05, max_features=4,
+                                 max_depth=4)
+
+SVM = svm.SVC()
+
+
 #mySVC = SVC(kernel='rbf', C=10, gamma=0.1)
 mySVC = SVC(kernel='poly', C=10, gamma=1)
 
-#vtc = VotingClassifier(estimators=[('rf', RF), ('extra', EXTRA), ('mySVC', mySVC)], voting='hard')
-vtc = VotingClassifier(estimators=[('rf', RF)], voting='hard')
+vtc = VotingClassifier(estimators=[#('rf', RF), ('svm', SVM),
+                                    ('rf', RF),
+                                    ('gbc', GBC)], voting='hard')
+
+#vtc = VotingClassifier(estimators=[('svm', SVM)], voting='hard')
 
 # Stratified KFold Scoring
 acc = []
@@ -57,8 +71,8 @@ for train_index, test_index in skf.split(bulkData, y):
     X1_train, X1_test = bulkData.iloc[train_index], bulkData.iloc[test_index]
     y1_train, y1_test = y.iloc[train_index], y.iloc[test_index]
 
-    mySVC.fit(X1_train, y1_train)
-    prediction = mySVC.predict(X1_test)
+    vtc.fit(X1_train, y1_train)
+    prediction = vtc.predict(X1_test)
     acc_score = accuracy_score(prediction, y1_test)
     acc.append(acc_score)
     rec_score = recall_score(prediction, y1_test)
