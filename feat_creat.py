@@ -88,14 +88,6 @@ scryData['toughness'] = scryData['toughness'].str.replace('*', '-3', regex = Fal
 scryData['toughness'] = scryData['toughness'].fillna(-5)
 myData['toughness'] = scryData['toughness']#.replace({'*' : -2})
 
-########
-# create Bulk variable
-########
-myData['exp'] = [1 if price >= 1 else 0 for price in scryData['price']]
-
-
-# price
-myData['price'] = scryData['price']
 
 
 # set type could be interesting
@@ -111,17 +103,42 @@ myData['set_enum'] = scryData['set_type'].replace({'core' : 1,
                                                'treasure_chest' : 10,
                                                'promo' : 11})
 
+#myData['is_core'] = scryData['set_type'].str.contains('core', regex = False).astype(int)
+#myData['is_expansion'] = scryData['set_type'].str.contains('expansion', regex = False).astype(int)
+myData['is_masters'] = scryData['set_type'].str.contains('masters', regex = False).astype(int)
+#myData['is_starter'] = scryData['set_type'].str.contains('starter', regex = False).astype(int)
+#myData['is_duel_deck'] = scryData['set_type'].str.contains('duel_deck', regex = False).astype(int)
+#myData['is_draft_innovation'] = scryData['set_type'].str.contains('draft_innovation', regex = False).astype(int)
+#myData['is_box'] = scryData['set_type'].str.contains('box', regex = False).astype(int)
+#myData['is_memorobilia'] = scryData['set_type'].str.contains('memorobilia', regex = False).astype(int)
+#myData['is_treasure_chest'] = scryData['set_type'].str.contains('treasure_chest', regex = False).astype(int)
+#myData['is_promo'] = scryData['set_type'].str.contains('promo', regex = False).astype(int)
+
 # in booster
 myData['is_booster'] = scryData['is_booster']
 
 # oracle text must be put into diegestible data
-#myData['oracle_text'] = scryData['oracle_text']
+myData['oracle_text'] = scryData['oracle_text']
+myData['oracle_text'] = myData['oracle_text'].fillna('no text')
+
+# oracle lenght >>> could be interesting
+myData['oracle_len'] = scryData['oracle_text'].str.len()
+myData['oracle_len'] = myData['oracle_len'].fillna(0)
 
 # flavor: Yes / NO
 #myData['flavor_text'] = scryData['flavor_text']
 
 # artist could also be interesting
 #myData['artist'] = scryData['artist']
+
+
+# price
+myData['price'] = scryData['price']
+
+########
+# create Bulk variable
+########
+myData['exp'] = [1 if price >= 1 else 0 for price in scryData['price']]
 
 
 #######

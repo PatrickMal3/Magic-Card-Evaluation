@@ -54,7 +54,7 @@ SVM = svm.SVC()
 mySVC = SVC(kernel='poly', C=10, gamma=1)
 
 vtc = VotingClassifier(estimators=[#('rf', RF), ('svm', SVM),
-                                    ('rf', RF),
+#                                    ('rf', RF),
                                     ('gbc', GBC)], voting='hard')
 
 #vtc = VotingClassifier(estimators=[('svm', SVM)], voting='hard')

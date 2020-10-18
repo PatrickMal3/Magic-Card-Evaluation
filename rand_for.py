@@ -23,6 +23,7 @@ y = bulkData['exp']
 bulkData = bulkData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
 #bulkData = bulkData.drop(['set_enum'], axis=1)
+bulkData = bulkData.drop(['oracle_text'], axis=1)
 
 
 #scaler = StandardScaler()
@@ -90,6 +91,8 @@ print('Stratified_KFold mean precision:')
 print(np.array(pre).mean())
 print('')
 
+
+
 bulkData = scryData
 #bulkData = bulkData[bulkData['rarity'].isin(filter_lst)]
 #bulkData = bulkData[bulkData['last_printing'] != 2019]
@@ -97,13 +100,15 @@ bulkData = scryData
 y = bulkData['exp']
 bulkData = bulkData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
-#bulkData = bulkData.drop(['set_enum'], axis=1)
+bulkData = bulkData.drop(['oracle_text'], axis=1)
 
 # train test split
 X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 
 # fit the train-test-split model
 RF.fit(X_train, y_train)
+
+print(X_train)
 
 pred = RF.predict(X_test)
 print('>>>Train-Test-Split Metrics<<<')
@@ -125,3 +130,11 @@ result_df['exp'] = y_test
 result_df['pred'] = pred
 
 result_df.to_csv('results.csv', index=True)
+
+# Feature importance
+print('Most important features:')
+feature_importances = pd.DataFrame(RF.feature_importances_,
+                                   index = X_train.columns,
+                                    columns=['importance']).sort_values('importance',
+                                                                         ascending=False)
+print(feature_importances)
