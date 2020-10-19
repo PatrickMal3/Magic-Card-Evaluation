@@ -13,6 +13,8 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
 from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.ensemble import BaggingClassifier
+
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
@@ -62,12 +64,10 @@ bulkData = bulkData.drop(['price'], axis=1)
 #               'gamma': gamma}
              
 
-n_estimators = [5, 20, 50, 100, 200, 400, 800, 1500]
-learning_rate = [0.05, 0.075, 0.1, 0.25, 0.5, 0.75, 1]
+n_estimators = [5, 10, 20, 50, 100, 200, 400, 800, 1500]
 max_features = [2, 3, 4, 5, 7, 10]
-max_depth = [2, 4, 8, 16, 32, 64]
-random_grid = {'n_estimators':n_estimators, 'learning_rate':learning_rate,
-               'max_features':max_features, 'max_depth':max_depth}
+random_grid = {'n_estimators':n_estimators, 
+               'max_features':max_features}
 
 
 
@@ -77,7 +77,8 @@ EXTRA = ExtraTreesClassifier()
 KNN = KNeighborsClassifier()
 mySVC = LinearSVC()
 gbc = GradientBoostingClassifier()
-rf_random = RandomizedSearchCV(estimator = gbc, param_distributions = random_grid, 
+bc = BaggingClassifier()
+rf_random = RandomizedSearchCV(estimator = bc, param_distributions = random_grid, 
                                n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 
 

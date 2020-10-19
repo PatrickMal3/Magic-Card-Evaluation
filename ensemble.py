@@ -9,6 +9,8 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn import svm
+from sklearn.ensemble import BaggingClassifier
+from sklearn.ensemble import AdaBoostClassifier
 
 # load in data
 scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
@@ -49,12 +51,16 @@ GBC = GradientBoostingClassifier(n_estimators=800, learning_rate=0.05, max_featu
 
 SVM = svm.SVC()
 
+BC = BaggingClassifier(n_estimators=50, max_samples=10)
+
+ADA = AdaBoostClassifier()
+
 
 #mySVC = SVC(kernel='rbf', C=10, gamma=0.1)
 mySVC = SVC(kernel='poly', C=10, gamma=1)
 
-vtc = VotingClassifier(estimators=[#('rf', RF), ('svm', SVM),
-#                                    ('rf', RF),
+vtc = VotingClassifier(estimators=[('rf', RF), ('svm', SVM),
+                                    #('ada', ADA),
                                     ('gbc', GBC)], voting='hard')
 
 #vtc = VotingClassifier(estimators=[('svm', SVM)], voting='hard')

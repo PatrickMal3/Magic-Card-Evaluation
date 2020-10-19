@@ -17,6 +17,10 @@ y = bulkData['exp']
 bulkData = bulkData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
 bulkData['oracle_text'] = bulkData['oracle_text'].str.replace('[,.\/+-1234567890]', ' ', regex=True)
+names = bulkData.index
+bulkData['oracle_text'] = bulkData['oracle_text'].replace({w: '' for w in names}, regex=True)
+bulkData['oracle_text'] = bulkData['oracle_text'].str.lower()
+print(bulkData['oracle_text'])
 
 X_train, X_test, y_train, y_test = train_test_split(bulkData, y, test_size=0.33)
 
@@ -37,8 +41,8 @@ text_pl = Pipeline([('text_data', get_text_data),
 
 pl = Pipeline([
     ('union', FeatureUnion([
-        ('numeric', numeric_pl)
-        #('text', text_pl)
+        ('numeric', numeric_pl),
+        ('text', text_pl)
     ])),
     ('clf', gbc)
     ])
