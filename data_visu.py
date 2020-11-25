@@ -4,8 +4,23 @@ import seaborn as sns
 import numpy as np
 
 scryData = pd.read_csv('2020_09_25_data_processed/fin_card_data.csv')
-scryData = scryData[scryData['price'] < 500]
+#scryData = scryData[scryData['price'] < 500]
 #scryData = scryData[scryData['rarity'] < 2]
+
+print(scryData['price'].max())
+print(scryData['price'].min())
+print(scryData['price'].mean())
+print(scryData['price'].median())
+
+sns.countplot(data=scryData, x='exp')
+plt.show()
+
+sns.countplot(data=scryData, x='rarity')
+plt.show()
+
+sns.catplot(data=scryData, kind='count', x='rarity', hue='exp')
+plt.show()
+
 
 basicCorr = scryData.corr(method='spearman')
 print(basicCorr)

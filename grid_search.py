@@ -14,15 +14,17 @@ from sklearn.svm import SVC
 from sklearn.svm import LinearSVC
 from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.ensemble import BaggingClassifier
+from xgboost import XGBClassifier
 
 
 # load in data
-scryData = pd.read_csv('2020_07_14_data_processed/fin_card_data.csv')
+scryData = pd.read_csv('2020_09_25_data_processed/fin_card_data.csv')
 
 y = scryData['exp']
 bulkData = scryData.drop(['exp'], axis=1)
 bulkData = bulkData.drop(['name'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
+bulkData = bulkData.drop(['oracle_text'], axis=1)
 #bulkData = bulkData.drop(['edhrec_rank'], axis=1)
 
 #bulkData = scryData[['rarity', 'cmc', 'first_printing', 'last_printing',
@@ -64,11 +66,17 @@ bulkData = bulkData.drop(['price'], axis=1)
 #               'gamma': gamma}
              
 
-n_estimators = [5, 10, 20, 50, 100, 200, 400, 800, 1500]
-max_features = [2, 3, 4, 5, 7, 10]
-random_grid = {'n_estimators':n_estimators, 
-               'max_features':max_features}
 
+max_depth = [4,5,6,7,8,9]
+min_child_weight = [3,4,5,8,9]
+gamma = [1,2,5,10]
+subsample = [0.2,0.5,0.7,1]
+colsample_bytree = [0.1,0.2,0.5,1]
+random_grid = {'max_depth':max_depth, 
+               'min_child_weight':min_child_weight,
+               'gamma':gamma,
+               'subsample':subsample,
+               'colsample_bytree':colsample_bytree}
 
 
 # RF classifier
@@ -78,6 +86,7 @@ KNN = KNeighborsClassifier()
 mySVC = LinearSVC()
 gbc = GradientBoostingClassifier()
 bc = BaggingClassifier()
+xgboost = XGBClassifier()
 rf_random = RandomizedSearchCV(estimator = bc, param_distributions = random_grid, 
                                n_iter = 100, cv = 3, verbose=2, random_state=42, n_jobs = -1)
 

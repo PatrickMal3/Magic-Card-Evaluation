@@ -138,7 +138,7 @@ myData['price'] = scryData['price']
 ########
 # create Bulk variable
 ########
-myData['exp'] = [1 if price >= 1 else 0 for price in scryData['price']]
+myData['bulk'] = [0 if price >= 1 else 1 for price in scryData['price']]
 
 
 #######
