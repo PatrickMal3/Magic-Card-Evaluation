@@ -10,10 +10,10 @@ lst = []
 wordData = pd.DataFrame(lst)
 
 wordData['oracle_text'] = scryData['oracle_text']
-wordData['exp'] = scryData['exp']
+wordData['bulk'] = scryData['bulk']
 
-y = wordData['exp']
-wordData = wordData.drop(['exp'], axis=1)
+y = wordData['bulk']
+wordData = wordData.drop(['bulk'], axis=1)
 
 count_vect = CountVectorizer(binary=True, analyzer='word', ngram_range=(1,4))
 
@@ -48,8 +48,8 @@ print(precision_score(pred, y_test))
 print('')
 
 bulkData = scryData
-y = bulkData['exp']
-bulkData = bulkData.drop(['exp'], axis=1)
+y = bulkData['bulk']
+bulkData = bulkData.drop(['bulk'], axis=1)
 bulkData = bulkData.drop(['price'], axis=1)
 bulkData = bulkData.drop(['oracle_text'], axis=1)
 
